@@ -307,7 +307,7 @@ h1 {
   color: #ffd700;
 }
 
-/* Testimony */
+/* Testimony section*/
 .testimony {
   text-align: center;
   width: 32%;
@@ -347,6 +347,7 @@ h1 {
 }
 /* ABOUT PAGE ENDS */
 
+
 /* CONTACT PAGE STARTS */
 form {
   margin-top: 200px;
@@ -381,10 +382,32 @@ input[type=submit] {
   float: right;
 }
 
+/* Contact info */
 .container-form {
   border-radius: 5px;
   padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 }
+
+.contact-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.contact-p {
+  font-size: 12px;
+}
+
+.parent3 {
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+
 
 /* CONTACT PAGE ENDS */
 
@@ -396,11 +419,11 @@ input[type=submit] {
 
   .row {
     display: block;
-}
+  }
 
   .container {
     display: block;
-}
+  }
 
   .bannerchild {
     font-size: 20px;
@@ -517,6 +540,16 @@ input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .contact-container {
+    width: 100%;
+  }
+
+  
 
 @media (min-width: 400px) {
   .wrapper {
@@ -648,6 +681,18 @@ input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  .container-form {
+    width: 90%;
+  }
+
+  .contact-container {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -738,13 +783,14 @@ input[type=submit] {
   }
 
  /* Info grid */
- .h1Info {
+  .h1Info {
   padding-top: 200px;
-}
+  } 
 
- .para {
+  .para {
     width: 30%;
   }
+
   .parent2 {
     display: flex;
     flex-flow: row wrap;
@@ -764,22 +810,26 @@ input[type=submit] {
   }
 
   /* Contact Form */
-  .col-25 {
-    float: left;
+  h3 {
+    font-size: 20px;
+  }
+
+  .container-form {
+    width: 50%;
+    margin-right: 400px;
+  }
+
+  .contact-banner-text {
+    margin-top: 0;
+  }
+
+  input[type=submit] {
     width: 25%;
-    margin-top: 6px;
+    margin-top: 0;
   }
-  
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+  .contact-container {
+    width: 20%;
   }
 }
 
@@ -841,105 +891,3 @@ input[type=submit] {
     opacity: 0;
   }
 }
-/* 
-@keyframes spin {
-  0% {
-    transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-
-.abtdoor {
-  display: flex;
-  justify-content: left;
-  position: absolute;
-  top: 4px;
-  left: 16px;
-  height: 30px;
-  width: 30px;
-}
-
-.abtdoor-handle {
-  transform:rotate(-180deg);
-  transition:all .7s ease-in-out;
-  animation: spin 3s linear infinite;
-
-}
-
-.abtdoorlock-wrapper {
-  position:absolute;
-  width:20px;
-  height:20px;
-}
-
-.abtdoor-lock {
-  background:#979494;
-}
-
-.abtdoor-circle {
-  position:absolute;
-  width:80px;
-  height:90px;
-  margin:40px;
-  border-radius:50%;
-  animation: spin 3s linear infinite;
-}
-
-.abtdoor-pistons {
-  position:absolute;
-  width:90px;
-  height:90px;
-  margin: 70px 25px;
-  background:none;
-}
-  
-.abtpiston {
-  position:absolute;
-  background:#979494;
-  width:120px;
-  height:30px;
-  border-radius:8px;
-  transition:all .05s ease-out;
-}
-
-.abtpiston2{
-  transform:rotate(45deg);
-}
-.abtpiston3{
-  transform:rotate(90deg);
-}
-.abtpiston4{
-  transform:rotate(135deg);
-}
-
-.abtdoor-handle {
-  position:absolute;
-  border:solid 18px #b6b3b3;
-  width:50px;
-  height:50px;
-  margin:80px 25px;
-  border-radius:50%;
-  transition:all .3s ease-in-out;
-}
-
-.abthandle {
-  position:absolute;
-  background:#b6b3b3;
-  height:22px;
-  width:60px;
-  margin-top: 0px;
-}
-
-.abthandle1 {
-  transform:rotate(45deg);
-}
-  
-.abthandle2 {
-  transform:rotate(135deg);
-}
- */
